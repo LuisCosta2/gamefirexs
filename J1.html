@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="" rel="stylesheet">
+
+    <link rel="stylesheet" href="jogos.css">
+    <title>GameFire</title>
+</head>
+
+<body>
+
+           
+            <nav>  
+                <div class="navbar">
+             <!-- site menu -->
+             <a class="site-logo" href="index2.html">
+                <img src="img/Logo/Logo3a.png" alt="">
+            </a>
+                    <a href="index.html">Home</a>
+                    <a href="Pag2.html">Mais Jogos</a>
+                    <div class="dropdown">
+                      <button class="dropbtn">Registar
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="login2.html">Login</a>
+                        <a href="sigin2.html">Sigin</a>
+
+                      </div>
+                    </div> 
+                    <button onclick="myFunction()" class="dropbtn">Iformação</button>
+                    <div id="myDropdown" class="dropdown-content">
+                      <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                      <a href="#about">Sobre Nos</a>
+                      <a href="#base">Rank</a>
+                      <a href="#blog">Recomendações</a>
+                      <a href="#contact">Contactos</a>
+                      <a href="#tools">Tema</a>
+                  </div>
+            </nav>
+        </div>
+
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+          </body>
+    </header>
+<body>
+    
+<section>
+<div class="video">
+        <iframe width="1000 "height="700" src="https://www.youtube.com/embed/L-WkBl96x78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      
+</section>
+
+</body>
+<footer>
+    Desenvolvido por Luis Costa
+</footer>
